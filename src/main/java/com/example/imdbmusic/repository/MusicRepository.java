@@ -12,7 +12,7 @@ public interface MusicRepository extends JpaRepository<Music, Integer> {
      List<Music> findByProducer(String producer);
      List<Music> findByLanguage(String language);
      List<Music> findByMusicDirector(String musicDirector);
-     List<Music> findByLyrics(String language);
+     List<Music> findByLyrics(String lyrics);
      List<Music> findByGenre(String genre);
      List<Music> findByMovieAlbum(String movieAlbum);
      List<Music> findByYearOfRelease(Integer year);

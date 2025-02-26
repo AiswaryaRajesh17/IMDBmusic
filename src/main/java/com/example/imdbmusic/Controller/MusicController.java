@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+
 public class MusicController {
     @Autowired
     private MusicService musicService;
@@ -69,7 +70,7 @@ public class MusicController {
     public ResponseEntity<List<Music>> getMusicByYearOfRelease(@PathVariable Integer year) {
         return ResponseEntity.ok(musicService.getMusicByYearOfRelease(year));
     }
-    @GetMapping("/moviealbum/{moviealbum}")
+    @GetMapping("/movieAlbum/{movieAlbum}")
     public ResponseEntity<List<Music>> getMusicByMovieAlbum(@PathVariable String movieAlbum) {
         return ResponseEntity.ok(musicService.getMusicByMovieAlbum(movieAlbum));
     }

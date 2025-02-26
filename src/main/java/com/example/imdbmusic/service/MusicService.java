@@ -15,7 +15,7 @@ public class MusicService {
     @Autowired
     private MusicRepository musicRepository;
 
-    private Music music;
+
 
     public Music addMusic(Music music) {
         return musicRepository.save(music);
